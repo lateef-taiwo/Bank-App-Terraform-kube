@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
-    bucket = "hms-tf-eks-bucket"
-    key    = "backend/HMS-App.tfstate"
+    bucket = "bank-app-bucket"
+    key    = "backend/bank-app.tfstate"
     region = "us-east-1"
     dynamodb_table = "DynamoDB-Table"
   }

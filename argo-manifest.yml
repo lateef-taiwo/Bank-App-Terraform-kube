@@ -1,17 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata: 
-  name: hms-app-argo
+  name: bank-app
   namespace: argocd
 spec: 
   project: default
   source: 
-    repoURL: https://github.com/lateef-taiwo/HMS_kube_manifest
+    repoURL: https://github.com/lateef-taiwo/Bank-App-Kube-Manifest
     targetRevision: HEAD
     path: manifest
   destination: 
     server: https://kubernetes.default.svc
-    namespace: hmsapp
+    namespace: bankapp
   syncPolicy: 
     syncOptions:
     - CreateNamespace=true
