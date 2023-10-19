@@ -1,4 +1,4 @@
-resource "aws_key_pair" "ToDo-App" {
-    key_name = "ToDo-App"
-    public_key = file("../modules/key/Bank-App.pub")
+resource "aws_key_pair" "Bank-App" {
+  key_name = "Bank-App-key"
+  public_key = var.PUBLIC_KEY
 }

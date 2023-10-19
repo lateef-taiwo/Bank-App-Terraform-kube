@@ -1,6 +1,9 @@
-HMS-App/.terraform.lock.hcl
-HMS-App/.terraform.lock.hcl_bkp
-HMS-App/.terraform/*
-HMS-App/.terraform_bkp/*
+Bank-App-Terraform-kube/.terraform.lock.hcl
+Bank-App-Terraform-kube/.terraform.lock.hcl_bkp
+Bank-App-Terraform-kube/.terraform/*
+Bank-App-Terraform-kube/.terraform_bkp/*
+terraform.tfstate
 modules/key/*
+root/.terraform.lock.hcl
+root/.terraform/**
 .DS_Store/*

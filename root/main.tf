@@ -11,8 +11,8 @@ module "VPC" {
 }
 
 # create NAT GATEWAY
-module "Nat-GW" {
-  source           = "../modules/Nat-GW"
+module "NAT-GW" {
+  source           = "../modules/NAT-GW"
   IGW_ID           = module.VPC.IGW_ID
   VPC_ID           = module.VPC.VPC_ID
   PUB_SUB1_ID      = module.VPC.PUB_SUB1_ID
