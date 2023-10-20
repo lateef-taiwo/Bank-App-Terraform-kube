@@ -1,3 +1,4 @@
+#argo-manifest.yml file
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata: 
@@ -6,12 +7,12 @@ metadata:
 spec: 
   project: default
   source: 
-    repoURL: https://github.com/lateef-taiwo/Bank-App-Kube-Manifest
+    repoURL: https://github.com/lateef-taiwo/Bank_App_Kube_Manifest  
     targetRevision: HEAD
     path: manifest
   destination: 
     server: https://kubernetes.default.svc
-    namespace: bankapp
+    namespace: bank-app
   syncPolicy: 
     syncOptions:
     - CreateNamespace=true
